@@ -1,0 +1,55 @@
+  html, body {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+
+  overflow: hidden;
+  background: url(http://i68.tinypic.com/2i7bc07.jpg) no-repeat;
+  background-size: cover;
+  image-rendering: pixelate;
+  font-family: sans-serif;
+  position: absolute;
+  z-index: -1;
+}
+
+
+#space {
+  width: 200%;
+  position: absolute;
+}
+
+#warp {
+  position: absolute;
+  cursor: grabbing;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  color: rgba(209, 255, 255, 78);
+  border: 2px solid;
+  padding: 0px;
+  width: 10em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1px;
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: crosshair;
+}
+
+#Yearbookbuy {
+  position: absolute;
+  z-index: -1;
+
+  bottom: 350px;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  color: rgb(255 , 255, 255);
+  padding: 1em;
+  width: 10em;
+  text-align: center;
+  font-size: 1.9em;
+  cursor: crosshair;
+}

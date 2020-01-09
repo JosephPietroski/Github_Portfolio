@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="My Portfolio For All That Want To See My Work">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Joseph Pietroski">
+    <title>Josephs Portfolio | About Me</title>
+    <link rel="stylesheet" href="C:\Users\Joseph JR1\OneDrive\Intergation\Portfolio\Web\OPS105 Project\style.css">
+
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Joseph's</span> Portfolio</h1>
+        </div>
+        <nav>
+          <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li class="current"> <a href="mynotes.html"> My Notes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+    <div class="container">
+      <h1 class="page-title">About Me</h1>
+        <p class="dark">
+          Go to <u>www.vmware.com</u> and install the workstation trial. Once installed, download the .ISO from the <u>CentOS</u> website. Make sure that is the DVD version not the minimal. From there you can then open the VMWare workstation and create a new “Virtual Machine”. Select the number of cores, ram, hard drive space that you want to dedicate to the virtual machine. I personally would keep it the same. Making sure that in the selection of what operating system that you point is at the ISO that you just downloaded. The Virtual machine will then start, and you will be greeted with a CentOS installation. Make sure that you set the version to the server installation. This is so that you have all the packages install to edit and maintain the CentOS Server Core. Make sure that you set the root password to something that you will remember as you will be using it frequantly.
+          After the install is finished open a terminal and start by installing the apachie server using the command  <b>yum -y install httpd</b>. Once that is done you can then start and check the status of the server. This is done by doing the following
+          <ol>
+          <li  id="short">	 Open a terminal by chicking the windows key and typing in <b>Terminal</b>.</li>
+          <li  id="short">	Make yourself the root user for that terminal. </li>
+          <li  id="short">		Use the command <b>su–</b> to get to root user. </li>
+          <li  id="short">		Enter your root users password.</li>
+          <li  id="short">	In the terminal enter <b>systemctl start httpd</b>.  </li>
+          <li  id="short">		Now check the status of the webserver to make sure that you started the server. Do this by typing in <b>systemctl status httpd</b>, this will show you the process and from there you can confirm that the service has started. To check if its running open up a internet browser and type in localhost this will tell the browser that you want to access the web server.</li>
+        <li  id="short">	 After the webpage loads you can then confirm that the server is running, if the site doesn’t show up you can then disable the firewall by typing <b>systemctl stop firewalld</b>. This will allow for the webpage to show pictures and allows other users to see your website.  </li>
+          <li  id="short">	Now you can go into the directory and edit the html page.  You can do this by opening a terminal and typing in <b>cd/var/www/html</b>  in this directory you will find 2 files the one that we want to change is the index file to do that we will type nano <b>index.html</b> in this file we will put our code for out website.  </li>
+        </ol>
+
+
+    <footer>
+      <p>Joseph's Portfolio, Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>

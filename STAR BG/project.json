@@ -1,0 +1,23 @@
+{
+	"description" : "",
+	"file" : "index.html",
+	"general" :
+	{
+		"properties" :
+		{
+			"schemecolor" :
+			{
+				"order" : -2,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Stars Good",
+	"type" : "web",
+	"visibility" : "private",
+	"workshopid" : 928419660
+}
