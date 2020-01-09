@@ -9,7 +9,7 @@
 
 
   script {
-    position: absolute;
+    position: fixed;
     z-index: -10;
     padding: 0;
   }
@@ -97,42 +97,85 @@
   /* Showcase */
 
   #showcase {
-    position: relative;
-    text-align: center;
+    position: fixed;
+    
   }
 
 
   #showcase h1 {
     
     color: rgb(255, 255, 255);
-    font-size: 40px;
-    top: 50%;
-    left: 50%;
-    border-bottom: #e8491d 3px solid;
+    font-size: 400%;
+    top: 500px;
+    left: 800px;
+    border-bottom: #e8491d 4px solid;
     z-index: 2;
-    position: absolute;
-   
-
-    
-
+    position: fixed;
+    text-align: justify;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; 
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    }
+    @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
   }
+  @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-o-keyframes fadein { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
 
   #showcase p {
     font-size: 20px;
-    position: static;
+    position: fixed;
     color: rgb(255, 255, 255);
-    position: absolute;
     margin-top: 200px;
     z-index: 2;
+    top: 450px;
+    left: 46%;
+    
+/* 
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; 
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s;  */
   }
 
+
   #showcase h2 {
-    position: absolute;
+    position: static;
     color: #3498db;
     text-align: center;
     padding-left: 650px;
 
   }
+
 
 
 

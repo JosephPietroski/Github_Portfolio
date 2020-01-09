@@ -1,4 +1,3 @@
-//based on an Example by @curran
 window.requestAnimFrame = (function () {
   return window.requestAnimationFrame
 })();
@@ -7,20 +6,18 @@ var c = canvas.getContext("2d");
 
 //Number Of Stars
 var numStars = 1500;
-
+//Math For Star Movement
 var radius = '0.' + Math.floor(Math.random() * 9) + 1;
 var focalLength = canvas.width * 2;
 var warp = 0;
 var centerX, centerY;
-
 var stars = [],
   star;
 var i;
-
 var animate = true;
 
+//Start Of Stars
 initializeStars();
-
 function executeFrame() {
 
   if (animate)
@@ -83,6 +80,7 @@ function drawStars() {
     c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
     c.fillStyle = "rgba(209, 255, 255, " + star.o + ")";
     //c.fill();
+  
   }
 }
 
