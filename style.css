@@ -100,15 +100,12 @@
     position: fixed;
     
   }
-
-
   #showcase h1 {
     
     color: rgb(255, 255, 255);
     font-size: 400%;
     top: 500px;
     left: 600px;
-    right: 600px;
     border-bottom: #e8491d 4px solid;
     z-index: 2;
     position: fixed;
