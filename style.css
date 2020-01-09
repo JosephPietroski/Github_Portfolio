@@ -107,10 +107,12 @@
     color: rgb(255, 255, 255);
     font-size: 40px;
     text-align: center;
+    top: 50%;
+    left: 50%;
     border-bottom: #e8491d 3px solid;
     z-index: 2;
-    position: static;
-    opacity: 100;
+    position: absolute;
+   
 
     
 
